@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="horizontal"
+    android:textColor="#FF000000" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical"
+        android:textColor="#FF000000" >
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="30dip"
+            android:text="Waiting for Action"
+            android:textColor="#FF000000"
+            android:textSize="30dp" />
+
+        <ScrollView
+            android:id="@+id/customScrollTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:fadeScrollbars="false"
+            android:fadingEdge="vertical|horizontal"
+            android:fadingEdgeLength="3dip"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideOverlay" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/customTaskTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:shrinkColumns="2"
+                    android:stretchColumns="0,1,2" >
+
+                    <TableRow android:layout_width="fill_parent" >
+
+                        <TextView
+                            style="@style/DetailStyle.crothall"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="Patient:"
+                            android:textColor="#8398a9" />
+
+                        <TextView
+                            android:id="@+id/patientName"
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:text="Kim Fairchild"
+                            android:textColorHint="#AA0000" />
+
+                        <TextView
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColorHint="#AA0000" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/DetailStyle.crothall"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="DOB / MRN:"
+                            android:textColor="#8398a9" />
+
+                        <TextView
+                            android:id="@+id/dateOfBirth"
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:text="05/30/1964"
+                            android:textColorHint="#AA0000" />
+
+                        <TextView
+                            android:id="@+id/medicalRecordNumber"
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="000078127"
+                            android:textColorHint="#AA0000" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/DetailStyle.crothall"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="Isolation:"
+                            android:textColor="#8398a9" />
+
+                        <TextView
+                            android:id="@+id/isolation"
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:text="No"
+                            android:textColorHint="#AA0000" />
+
+                        <TextView
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColorHint="#AA0000" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColor="#8398a9" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/DetailStyle.crothall"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="Type:"
+                            android:textColor="#8398a9" />
+
+                        <TextView
+                            android:id="@+id/type"
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:text="Transport"
+                            android:textColorHint="#AA0000" />
+
+                        <TextView
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColorHint="#AA0000" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/DetailStyle.crothall"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="Start"
+                            android:textColor="#8398a9" />
+
+                        <TextView
+                            android:id="@+id/start"
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:text="B-103a"
+                            android:textColorHint="#AA0000" />
+
+                        <TextView
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColorHint="#AA0000" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/DetailStyle.crothall"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="Dest:"
+                            android:textColor="#8398a9" />
+
+                        <TextView
+                            android:id="@+id/destination"
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:text="Radiology"
+                            android:textColorHint="#AA0000" />
+
+                        <TextView
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColorHint="#AA0000" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/DetailStyle.crothall"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="Mode:"
+                            android:textColor="#8398a9" />
+
+                        <TextView
+                            android:id="@+id/mode"
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:text="Ambulatory"
+                            android:textColorHint="#AA0000" />
+
+                        <TextView
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColorHint="#AA0000" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/DetailStyle.crothall"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="Equipment:"
+                            android:textColor="#8398a9" />
+
+                        <TextView
+                            android:id="@+id/equipment"
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:text="IV Pole"
+                            android:textColorHint="#AA0000" />
+
+                        <TextView
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColorHint="#AA0000" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColor="#8398a9" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/DetailStyle.crothall"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="Notes:"
+                            android:textColor="#8398a9" />
+
+                        <TextView
+                            android:id="@+id/notes"
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_span="2"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:singleLine="false"
+                            android:text="ISOLATION PATIENT NOTIFY RADIOLOGY PRIOR TO BRINGING PATIENT TO RADIOLOGY"
+                            android:textColorHint="#AA0000" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/taskTable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:shrinkColumns="1"
+                    android:stretchColumns="0,1" >
+
+                    <TableRow>
+
+                        <TextView
+                            style="@style/DetailStyle.crothall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Destination"
+                            android:textColor="#8398a9"
+                            android:visibility="invisible" />
+
+                        <EditText
+                            style="@style/DetailStyle.crothall.edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:hint="Destination"
+                            android:inputType="textMultiLine"
+                            android:singleLine="false"
+                            android:text="ISOLATION PATIENT NOTIFY RADIOLOGY PRIOR TO BRINGING PATIENT TO RADIOLOGY"
+                            android:textColorHint="#AA0000"
+                            android:visibility="invisible" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

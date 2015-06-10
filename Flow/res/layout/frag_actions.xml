@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topAction"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shaded_background"
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/actionDelayButton"
+                style="@style/FragStyle"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="3dip"
+                android:text="Delay"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/actionCompleteOtherButton"
+                style="@style/FragStyle"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="3dip"
+                android:text="@string/completeOther"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/actionRequestCancellationButton"
+                style="@style/FragStyle"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="3dip"
+                android:text="@string/requestCancellation"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/actionCompleteButton"
+                style="@style/FragStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Complete To Available"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="2"
+                android:clickable="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/finishDelayLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="2"
+        android:background="@drawable/shaded_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="5dip"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/completeDelayButtonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/actionCompleteDelayButton"
+                style="@style/FragStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button"
+                android:clickable="true"
+                android:text="Finish Delay"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/breakSwooshLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <com.ii.mobile.timers.Swoosh
+                android:id="@+id/delaySwoosh"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

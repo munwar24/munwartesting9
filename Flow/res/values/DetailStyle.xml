@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="FragStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowColor">#111155</item>
+    </style>
+
+    <style name="BeaconSpinnerStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:background">#2990ed</item>
+        <item name="android:shadowColor">#111155</item>
+    </style>
+
+    <style name="LightSpinnerStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditBoxStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#111155</item>
+        <item name="android:background">@android:drawable/editbox_background</item>
+    </style>
+
+    <style name="PullDownStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:background">@android:drawable/btn_dropdown</item>
+        <item name="android:shadowColor">#111155</item>
+    </style>
+
+    <style name="FragStyle.title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowDx">4</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowColor">#8888CC</item>
+    </style>
+
+    <style name="FragEtchStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowColor">#FFFFFF</item>
+    </style>
+
+    <style name="DetailStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="DetailStyle.crothall" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="DetailStyle.crothall.title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DetailStyle.crothall.edit">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="DetailStyle.crothall.button">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DetailStyle.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DetailStyle.bold.large">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DetailStyle.large">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DetailStyle.dottedLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:layout_marginTop">10dip</item>
+        <item name="android:layout_marginBottom">10dip</item>
+        <item name="android:src">@drawable/dotted</item>
+    </style>
+
+    <style name="DetailStyle.line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:layout_marginTop">10dip</item>
+        <item name="android:layout_marginBottom">10dip</item>
+        <item name="android:src">@drawable/line</item>
+    </style>
+
+    <style name="DetailStyle.task">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="DetailStyle.navBar">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">#000000</item>
+    </style>
+
+    <style name="DetailStyle.navBar.status">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:background">#CCCCCC</item>
+    </style>
+
+    <style name="DetailStyle.staffDetail">
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="horizontal"
+    android:textColor="#FF000000" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical"
+        android:textColor="#FF000000" >
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="30dip"
+            android:text="Waiting for Actions"
+            android:textColor="#FF000000"
+            android:textSize="30sp" />
+
+        <ScrollView
+            android:id="@+id/customScrollTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:fadeScrollbars="false"
+            android:fadingEdge="vertical|horizontal"
+            android:fadingEdgeLength="7dip"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideOverlay" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:id="@+id/actionViewTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="10dip"
+                    android:shrinkColumns="2"
+                    android:stretchColumns="0,1,2" >
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notice"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/crothall_2014" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/volumeTitleOne"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#ff000000"
+        android:clickable="true"
+        android:longClickable="true"
+        android:text="Select Volume"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/volumeButtonOne"
+        style="@style/DetailStyle.bold.large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/volumeTitle"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="16dip"
+        android:onClick="playAudioButtonClick"
+        android:src="@drawable/volume" />
+
+    <Button
+        android:id="@+id/volumeText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/volumeButton"
+        android:layout_below="@+id/volumeTitle"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toRightOf="@+id/volumeButton"
+        android:background="@drawable/button"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="volumeButtonClick"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Mute Volume"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/selection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/volumeButton"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#ff000000"
+        android:clickable="true"
+        android:longClickable="true"
+        android:text="Select Break Type"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/lunchBreakButton"
+        style="@style/DetailStyle.bold.large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selection"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="16dip"
+        android:onClick="lunchBreakButtonClick"
+        android:src="@drawable/lunch" />
+
+    <Button
+        android:id="@+id/lunchBreakText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lunchBreakButton"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toRightOf="@+id/lunchBreakButton"
+        android:background="@drawable/button"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="lunchBreakButtonClick"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Lunch"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/shortBreak"
+        style="@style/DetailStyle.bold.large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lunchBreakButton"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="16dip"
+        android:onClick="shortBreakButtonClick"
+        android:src="@drawable/on_break" />
+
+    <Button
+        android:id="@+id/createReturnTripTaskText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/shortBreak"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toRightOf="@+id/shortBreak"
+        android:background="@drawable/button"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="shortBreakButtonClick"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Short Break"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>

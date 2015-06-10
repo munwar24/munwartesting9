@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="syncFrequency">
+        <item name="1">Once a second</item>
+        <item name="7">Every 5 seconds</item>
+        <item name="3">Every 30 seconds</item>
+    </string-array>
+    <string-array name="syncFrequencyValues">
+        <item name="1">1</item>
+        <item name="7">7</item>
+        <item name="30">30</item>
+    </string-array>
+    <string-array name="textSize">
+        <item name="1">Small</item>
+        <item name="2">Default</item>
+        <item name="3">Large</item>
+    </string-array>
+    <string-array name="textSizeValues">
+        <item name="1">Small</item>
+        <item name="2">Default</item>
+        <item name="3">Large</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:stretchColumns="1" >
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="#00000000"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="User"
+        android:textColor="#FF000000"
+        android:textSize="13sp" />
+
+</RelativeLayout>

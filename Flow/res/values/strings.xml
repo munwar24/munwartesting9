@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Preferences -->
+    <string name="pref_text_size_summary">Select size of text</string>
+    <string name="pref_text_size">Text size</string>
+    <string name="pref_staff_user_summary">Toggle staff user (off only)</string>
+    <string name="pref_staff_user">Staff User</string>
+    <string name="pref_vibrate_summary">Toggle vibration</string>
+    <string name="pref_vibrate">Vibrate</string>
+    <string name="pref_send_report_summary">Must restart to take effect</string>
+    <string name="pref_send_report">Send crash reports</string>
+    <string name="pref_sync_frequency">Sync frequency</string>
+    <string name="pref_sync_frequency_summary">Set the sync frequency</string>
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_update_setting">Update Settings</string>
+
+    <!-- Defaults -->
+    <string name="alert_notif">Alert</string>
+    <string name="content_title">Crothall TeamFlow</string>
+    <string name="content_text">Press to return to Crothall TeamFlow</string>
+    <string name="hello">Crothall Healthcare</string>
+    <string name="app_name">Crothall TeamFlow</string>
+    <string name="launch_notif">TeamFlow Connected</string>
+    <string name="default_user"></string>
+    <string name="default_password"></string>
+    <string name="activity_name">TeamFlow</string>
+    <string name="instructions">Slide from the right to the left to switch between views</string>
+    <string name="old_default_platform">https://www.submitarequest.com/hrc/HRCMain.aspx</string>
+    <string name="prod_platform">http://www.submitarequest.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string>
+    <string name="im_notif">Instant Message</string>
+
+    <!-- Action Fragment -->
+    <string name="completeOther">Complete</string>
+    <string name="delayReason">Delay Reason</string>
+    <string name="cancelReason">Cancel Reason</string>
+    <string name="requestCancellation">Cancel</string>
+    <string name="requestCancel">Request\nCancel</string>
+
+    <!-- SelfTask Fragment -->
+    <string name="createSelfTask">Create Transport\nTask</string>
+    <string name="createRoundTripTask">Create Return Trip\nTask</string>
+
+    <!-- Pre-defined users and platforms -->
+
+    <string name="adefault_platform">http://198.84.29.16/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string>
+    <string name="default_platform">http://www.submitarequest.com/HRCAjax/DOM/StateEngineWebSite/StateEngineWebService.asmx</string>
+
+    <string-array name="username_array">
+
+        <!-- <item>mobile1</item> -->
+
+        <item>kimm</item>
+        <item>kim1</item>
+        <!-- <item>ting@i3.io</item> -->
+        <!-- <item>mobile1@iicorporate.com</item> -->
+        <item>t_safiyacarter</item>
+
+        <!-- <item>mobile1</item> -->
+        <!-- <item>BJAWS</item> -->
+        <!-- <item>bay</item> -->
+        <!-- <item>H_WrightA</item> -->
+        <!-- <item>ellis</item> -->
+    </string-array>
+    <string-array name="password_array">
+
+        <!-- <item>123</item> -->
+        <item>123</item>
+        <item>123</item>
+        <!-- <item>1972</item> -->
+        <!-- <item>123</item> -->
+        <item>2012</item>
+        <!-- <item>1972</item> -->
+        <!-- <item>123</item> -->
+        <!-- <item>8625</item> -->
+        <!-- <item>123</item> -->
+    </string-array>
+    <string-array name="platform_array">
+
+        <!-- <item>Boston Medical Center</item> -->
+        <!-- <item>Boston Medical Center</item> -->
+        <item>OH</item>
+        <item>OH</item>
+        <item>OH</item>
+    </string-array>
+
+    <string name="intent_app_name">Intent Blocker</string>
+    <string name="intent_block_service_stopped">Intent Blocker Service stopped</string>
+    <string name="intent_block_service_started">Intent Blocker Service started</string>
+    <string name="log_in">Log In</string>
+    <string name="log_out">Log Out</string>
+    <string name="enter">Enter</string>
+    <!--  -->
+    <string name="long_click_on_login">false</string>
+    <string name="crothall_comment">Old comment</string>
+    
+    <!-- <string name="app_file">teamflow</string> -->
+    <string name="app_file">teamflow</string>
+    
+    <string name="production_download_url">https://hrctest.crothall.com/m/</string>
+    <string name="candidate_download_url">https://hrctest.crothall.com/m/t/</string>
+    <string name="daily_download_url">https://hrctest.crothall.com/m/d/</string>
+
+    <bool name="isCanada">false</bool>
+    <bool name="isDemoVersion">false</bool>
+    <bool name="wantCrashReporting">false</bool>
+    <bool name="isProduction">true</bool>
+    <bool name="isCandidate">false</bool>
+
+    <string name="productionCrashReporting">54295a2983fb7957bb000004</string>
+    <string name="candidateCrashReporting">5486db3f83fb791c9500000d</string>
+    <string name="dailyCrashReporting">50afc8824f633a36ed000002</string>
+    <string name="server_url">https://npc.crothall.com/flow/</string>
+    <string name="crothall_version">2.3</string>
+
+</resources>

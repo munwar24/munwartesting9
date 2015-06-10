@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shaded_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/action_header"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#0000ff"
+        android:orientation="horizontal" >
+
+        <!-- <fragment -->
+        <!-- android:id="@+id/action_header_fragment" -->
+        <!-- android:name="com.ii.mobile.actionButtons.BreakFragment" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:tag="action_header_fragment" /> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/break_header"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#00ff00"
+        android:orientation="horizontal" >
+
+        <!-- <fragment -->
+        <!-- android:id="@+id/break_header_fragment" -->
+        <!-- android:name="com.ii.mobile.actionButtons.BreakFragment" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:tag="break_header_fragment" /> -->
+    </LinearLayout>
+    <!-- <fragment -->
+    <!-- android:id="@+id/actionfragment" -->
+    <!-- android:name="com.ii.mobile.actionButtons.ActionFragment" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" /> -->
+
+
+    <!-- <fragment -->
+    <!-- android:id="@+id/breakfragment" -->
+    <!-- android:name="com.ii.mobile.actionButtons.BreakFragment" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" /> -->
+
+</LinearLayout>

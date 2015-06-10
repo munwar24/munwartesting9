@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : ic_tab_details.xml
+    Created on : November 24, 2011, 11:35 PM
+    Author     : kfairchild
+    Description:
+        Purpose of the document follows.
+-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- When selected, use grey -->
+    <item android:drawable="@drawable/task" android:state_selected="true"/>
+    <!-- When not selected, use white -->
+    <item android:drawable="@drawable/task_invert"/>
+
+</selector>

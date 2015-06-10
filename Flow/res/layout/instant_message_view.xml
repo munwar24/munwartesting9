@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/SonucScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true" >
+
+        <TextView
+            android:id="@+id/chatWindow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="0.16"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+</LinearLayout>

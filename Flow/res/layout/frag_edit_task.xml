@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_toLeftOf="@+id/submitButton"
+            android:prompt="@string/hello"
+            android:text="Around The World"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/DetailStyle.crothall.button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinner"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:onClick="submitButtonClick"
+            android:text="Submit"
+            android:textColor="#00AA00"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/topLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:stretchColumns="0,1" >
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/DetailStyle.crothall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="Destination" />
+
+                    <EditText
+                        style="@style/DetailStyle.crothall.edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Destination"
+                        android:textColorHint="#AA0000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/DetailStyle.crothall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="Destination" />
+
+                    <Button
+                        style="@style/DetailStyle.crothall.edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Button"
+                        android:textColorHint="#AA0000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Spinner
+                        style="@style/DetailStyle.crothall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="Destination" />
+
+                    <EditText
+                        style="@style/DetailStyle.crothall.edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Destination"
+                        android:textColorHint="#AA0000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/DetailStyle.crothall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="Destination" />
+
+                    <EditText
+                        style="@style/DetailStyle.crothall.edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Destination"
+                        android:textColorHint="#AA0000" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

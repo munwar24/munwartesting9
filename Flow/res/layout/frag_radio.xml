@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        style="@drawable/circle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:checkedButton="2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/circle_button"
+            android:checked="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:shadowColor="#FFFF0000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="1" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radio5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radio6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- <RadioButton -->
+        <!-- android:id="@+id/radio6" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" /> -->
+    </RadioGroup>
+
+</LinearLayout>

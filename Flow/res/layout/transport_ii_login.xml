@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:apiKey="0G59coe_FxE9doBcB6PCf0WEUCogUJDvOvTvDnA" -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:stretchColumns="1" >
+
+    <TextView
+        android:id="@+id/fullScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:longClickable="true" />
+
+    <fragment
+        android:id="@+id/loginMonitor"
+        android:name="com.ii.mobile.monitor.NetworkMonitorFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:tag="NetworkMonitorFragment"
+        android:textColor="#AAAAAA"
+        tools:layout="@layout/network_monitor_layout" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dip"
+        android:src="@drawable/newcrothall_2014" >
+    </ImageView>
+
+    <ScrollView
+        android:id="@+id/scrollViewTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:stretchColumns="1" >
+
+            <TextView
+                android:id="@+id/dummy"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:textSize="1sp" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/dummy"
+                android:layout_below="@id/dummy"
+                android:text="User Name"
+                android:textColor="#000000"
+                android:textSize="17sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtUsername"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/dummy"
+                android:layout_below="@+id/userName"
+                android:background="@android:drawable/editbox_background"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:text="@string/default_user"
+                android:textColor="#000000"
+                android:textSize="17sp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/dummy"
+                android:layout_below="@id/txtUsername"
+                android:paddingTop="10dip"
+                android:text="Password"
+                android:textColor="#000000"
+                android:textSize="17sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/dummy"
+                android:layout_below="@id/TextView02"
+                android:background="@android:drawable/editbox_background"
+                android:imeOptions="actionDone|actionSend"
+                android:password="true"
+                android:singleLine="true"
+                android:text="@string/default_password"
+                android:textColor="#000000"
+                android:textSize="17sp" >
+            </EditText>
+
+            <RelativeLayout
+                android:id="@+id/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/dummy"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignRight="@id/dummy"
+                android:layout_below="@id/txtPassword"
+                android:layout_marginTop="10dip" >
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_gravity="left|center_horizontal"
+                    android:background="@drawable/blue_button"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="@string/log_in"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" >
+                </Button>
+
+                <Button
+                    android:id="@+id/buttonEnter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_gravity="right|fill"
+                    android:background="@drawable/blue_button"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:text="@string/enter"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:visibility="visible" >
+                </Button>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <fragment
+        android:id="@+id/network_monitor_fragment"
+        android:name="com.ii.mobile.monitor.NetworkMonitorFragment"
+        android:layout_width="25dp"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

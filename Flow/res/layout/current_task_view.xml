@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:stretchColumns="1"
+    android:textColor="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/bottomLine"
+        style="@style/DetailStyle.navBar.status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- statusOne -->
+
+        <TextView
+            android:id="@+id/statusOne"
+            style="@style/DetailStyle.navBar.status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:text="" />
+
+        <!-- statusTwo -->
+
+        <TextView
+            android:id="@+id/statusTwo"
+            style="@style/DetailStyle.navBar.status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="" />
+
+        <!-- statusThree -->
+
+        <TextView
+            android:id="@+id/statusThree"
+            style="@style/DetailStyle.navBar.status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:text="" />
+    </RelativeLayout>
+
+    <!-- button bar -->
+
+    <RelativeLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottomLine"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:stretchColumns="1"
+        android:textColor="#FFFFFF" >
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/createTransportationTaskButton"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/spinnerText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/spinner"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@+id/spinner"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="delayButtonClick"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="Delay"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/completeToSpinner"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/spinner"
+            android:layout_alignTop="@+id/createTransportationTaskButton"
+            android:layout_below="@+id/spinner"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/taskCompleteText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/completeToSpinner"
+            android:layout_below="@+id/spinner"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@+id/completeToSpinner"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="taskCompleteTaskButtonClick"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="Complete"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/startTaskButton"
+            style="@style/DetailStyle.bold.large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:contentDescription="transporationButton"
+            android:onClick="startTaskButtonClick"
+            android:src="@drawable/transportation_task"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/startTaskText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/startTaskButton"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@+id/startTaskButton"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="startTaskButtonClick"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="Start Task"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/createTransportationTaskButton"
+            style="@style/DetailStyle.bold.large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:contentDescription="transporationButton"
+            android:onClick="createTransportationTaskButtonClick"
+            android:src="@drawable/transportation_task"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/createTransportationTaskText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/createTransportationTaskButton"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@+id/createTransportationTaskButton"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="createTransportationTaskButtonClick"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="Create Transportation Task"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/createRoundTripTaskButton"
+            style="@style/DetailStyle.bold.large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/createTransportationTaskButton"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="16dip"
+            android:onClick="createRoundTripTaskButtonClick"
+            android:src="@drawable/roundtrip_task"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/createReturnTripTaskText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/createRoundTripTaskButton"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@+id/createRoundTripTaskButton"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="createRoundTripTaskButtonClick"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="Create Return Trip Task"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/resumeTaskButton"
+            style="@style/DetailStyle.bold.large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:onClick="resumeTaskButtonClick"
+            android:src="@drawable/resume_task"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/resumeTaskText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/resumeTaskButton"
+            android:layout_below="@+id/spinner"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@+id/resumeTaskButton"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="resumeTaskButtonClick"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="Resume Task"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/information"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/buttonBar"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:textColor="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/taskMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:text="Currently awaiting task Assignment."
+            android:textColor="#FFFFFF"
+            android:textSize="25dip"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:id="@+id/taskTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" >
+
+            <TableLayout
+                android:id="@+id/topLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:shrinkColumns="1"
+                android:stretchColumns="0,1" >
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/DetailStyle.crothall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="Destination" />
+
+                    <EditText
+                        style="@style/DetailStyle.crothall.edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center_vertical"
+                        android:hint="Destination"
+                        android:inputType="textMultiLine"
+                        android:singleLine="false"
+                        android:text="A very long note. A very long note. A very long note. A very long note. A very long note. A very long note. A very long note. "
+                        android:textColorHint="#AA0000" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

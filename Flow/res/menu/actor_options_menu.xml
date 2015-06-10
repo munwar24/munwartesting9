@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/option" >
+
+    <item
+        android:id="@+id/update"
+        android:icon="@drawable/update"
+        android:title="Update"/>
+
+</menu>

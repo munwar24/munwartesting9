@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="clip_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="clip_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/title"
+                style="@style/DetailStyle.crothall.button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="Create Admissions Transport"
+                android:textColor="#00AA00"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/patientName"
+                style="@style/DetailStyle.crothall"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:paddingTop="10dip"
+                android:text="Patient Name" />
+
+            <EditText
+                android:id="@+id/patientNameEdit"
+                style="@style/DetailStyle.crothall.edit"
+                android:layout_alignTop="@id/patientName"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_toRightOf="@id/patientName"
+                android:hint="Patient Name"
+                android:minLines="2"
+                android:width="300dip" />
+
+            <TextView
+                android:id="@+id/destination"
+                style="@style/DetailStyle.crothall"
+                android:layout_alignLeft="@id/patientName"
+                android:layout_below="@id/patientNameEdit"
+                android:paddingTop="10dip"
+                android:text="Destination" />
+
+            <EditText
+                android:id="@+id/destinationEdit"
+                style="@style/DetailStyle.crothall.edit"
+                android:layout_alignLeft="@+id/patientNameEdit"
+                android:layout_alignRight="@+id/patientNameEdit"
+                android:layout_alignTop="@+id/destination"
+                android:layout_toRightOf="@+id/destination"
+                android:hint="Destination"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/dateOfBirth"
+                style="@style/DetailStyle.crothall"
+                android:layout_alignLeft="@+id/destination"
+                android:layout_below="@+id/destinationEdit"
+                android:paddingTop="10dip"
+                android:text="Patient DOB" />
+
+            <EditText
+                android:id="@+id/dateOfBirthEdit"
+                style="@style/DetailStyle.crothall.edit"
+                android:layout_alignLeft="@+id/patientNameEdit"
+                android:layout_alignRight="@+id/patientNameEdit"
+                android:layout_alignTop="@+id/dateOfBirth"
+                android:layout_toRightOf="@+id/dateOfBirth"
+                android:hint="Date of Birth"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/equipment"
+                style="@style/DetailStyle.crothall"
+                android:layout_alignLeft="@+id/dateOfBirth"
+                android:layout_below="@+id/dateOfBirthEdit"
+                android:paddingTop="10dip"
+                android:text="Equipment" />
+
+            <EditText
+                android:id="@+id/equipmentEdit"
+                style="@style/DetailStyle.crothall.edit"
+                android:layout_alignLeft="@+id/patientNameEdit"
+                android:layout_alignRight="@+id/patientNameEdit"
+                android:layout_alignTop="@+id/equipment"
+                android:layout_toRightOf="@+id/equipment"
+                android:hint="Equipment"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/start"
+                style="@style/DetailStyle.crothall"
+                android:layout_alignLeft="@+id/dateOfBirth"
+                android:layout_below="@+id/equipmentEdit"
+                android:paddingTop="10dip"
+                android:text="Start" />
+
+            <EditText
+                android:id="@+id/startEdit"
+                style="@style/DetailStyle.crothall.edit"
+                android:layout_alignLeft="@+id/patientNameEdit"
+                android:layout_alignRight="@+id/patientNameEdit"
+                android:layout_alignTop="@+id/start"
+                android:layout_toRightOf="@id/start"
+                android:hint="Start"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/mode"
+                style="@style/DetailStyle.crothall"
+                android:layout_alignLeft="@+id/dateOfBirth"
+                android:layout_below="@+id/startEdit"
+                android:paddingTop="10dip"
+                android:text="Mode" />
+
+            <EditText
+                android:id="@+id/modeEdit"
+                style="@style/DetailStyle.crothall.edit"
+                android:layout_alignLeft="@+id/patientNameEdit"
+                android:layout_alignRight="@+id/patientNameEdit"
+                android:layout_alignTop="@+id/mode"
+                android:layout_toRightOf="@+id/mode"
+                android:hint="Mode"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/item"
+                style="@style/DetailStyle.crothall"
+                android:layout_alignLeft="@+id/dateOfBirth"
+                android:layout_below="@+id/modeEdit"
+                android:paddingTop="10dip"
+                android:text="Item" />
+
+            <EditText
+                android:id="@+id/itemEdit"
+                style="@style/DetailStyle.crothall.edit"
+                android:layout_alignLeft="@+id/patientNameEdit"
+                android:layout_alignRight="@+id/patientNameEdit"
+                android:layout_alignTop="@+id/item"
+                android:layout_toRightOf="@+id/item"
+                android:hint="Item"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/cCode"
+                style="@style/DetailStyle.crothall"
+                android:layout_alignLeft="@+id/dateOfBirth"
+                android:layout_below="@+id/itemEdit"
+                android:paddingTop="10dip"
+                android:text="C-Code" />
+
+            <EditText
+                android:id="@+id/cCodeEdit"
+                style="@style/DetailStyle.crothall.edit"
+                android:layout_alignLeft="@+id/patientNameEdit"
+                android:layout_alignRight="@+id/patientNameEdit"
+                android:layout_alignTop="@+id/cCode"
+                android:layout_toRightOf="@+id/cCode"
+                android:hint="C-Code"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/scheduleDate"
+                style="@style/DetailStyle.crothall"
+                android:layout_alignLeft="@+id/dateOfBirth"
+                android:layout_below="@+id/cCodeEdit"
+                android:paddingTop="10dip"
+                android:text="Schedule Date" />
+
+            <DatePicker
+                android:id="@+id/datePicker1"
+                style="@style/DetailStyle.crothall"
+                android:layout_alignLeft="@+id/patientNameEdit"
+                android:layout_alignTop="@+id/scheduleDate"
+                android:layout_toRightOf="@+id/scheduleDate" />
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/datePicker1"
+                android:layout_below="@+id/datePicker1"
+                android:layout_marginTop="24dp" />
+
+            <CheckBox
+                android:id="@+id/scheduleTaskCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/timePicker1"
+                android:layout_below="@+id/timePicker1"
+                android:text="Scheduled Task" />
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dateOfBirth"
+                android:layout_below="@+id/scheduleTaskCheckBox"
+                android:paddingTop="10dip"
+                android:text="Note" />
+
+            <EditText
+                android:id="@+id/noteEdit"
+                style="@style/DetailStyle.crothall.edit"
+                android:layout_alignLeft="@+id/patientNameEdit"
+                android:layout_alignRight="@+id/patientNameEdit"
+                android:layout_alignTop="@+id/note"
+                android:layout_toRightOf="@+id/note"
+                android:hint="Note"
+                android:minLines="6"
+                android:singleLine="false" >
+            </EditText>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/title"
+                android:layout_alignRight="@+id/scheduleTaskCheckBox"
+                android:layout_toRightOf="@+id/item" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

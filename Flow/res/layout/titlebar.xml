@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="57px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/icon" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/employeeStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/Icon"
+        android:text="branding"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/taskStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:text="taskStatus"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+</RelativeLayout>

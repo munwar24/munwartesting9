@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_user_profile" >
+        <EditTextPreference
+            android:key="prefUsername"
+            android:summary="@string/pref_user_name_summary"
+            android:title="@string/pref_user_name" />
+
+        <ListPreference
+            android:entries="@array/textSize"
+            android:entryValues="@array/textSizeValues"
+            android:key="prefTextSize"
+            android:summary="@string/pref_text_size_summary"
+            android:title="@string/pref_text_size" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="false"
+            android:key="prefStaffUser"
+            android:selectable="false"
+            android:summary="@string/pref_staff_user_summary"
+            android:title="@string/pref_staff_user" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefVibrate"
+            android:summary="@string/pref_vibrate_summary"
+            android:title="@string/pref_vibrate" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_update_setting" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefSendReport"
+            android:summary="@string/pref_send_report_summary"
+            android:title="@string/pref_send_report" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:entries="@array/syncFrequency"
+            android:entryValues="@array/syncFrequencyValues"
+            android:key="prefSyncFrequency"
+            android:summary="@string/pref_sync_frequency_summary"
+            android:title="@string/pref_sync_frequency" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

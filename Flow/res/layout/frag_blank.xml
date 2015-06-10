@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="horizontal"
+    android:textColor="#FF000000" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical"
+        android:textColor="#FF000000" ><TextView
+            android:id="@+id/notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="30dip"
+            android:text="Waiting for task"
+            android:textColor="#FF000000"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
